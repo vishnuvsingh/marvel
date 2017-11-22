@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Subscribe With Us</title>
+	
+	<style>
+	
+		body{
+			margin-left:30px;
+		}
+
+		h1{
+			text-align:center;
+			color:grey;
+		}
+
+		img{
+			width:20%;
+			position:relative;
+			margin-top:2%;
+			left:1%;
+			display:inline;
+		}
+
+		input[type="submit"]{
+			margin-right:initial;
+			position:absolute;
+			right:45%;
+			background-color:black;
+			color:white;
+			width:100px;
+			padding:10px;
+		}
+
+
+
+		#form{
+			font-weight:bold;
+			margin-right:30px;
+			padding-top:30px;
+			padding-bottom:30px;
+			background-color:lightgrey;
+			text-align:center;
+		}
+
+
+		img:hover{
+				/*border:5px solid black;*/
+				opacity:0.8;
+		}
+
+		img:active{
+			opacity:0.2;
+		}
+
+		footer a{
+			color:grey;
+			text-decoration:none;
+			font-size:1.7rem;
+		}
+			
+		a#cu:hover{font-weight:bold;}
+		a#su:hover{font-weight:bold;}
+			
+		a#su{
+			position:absolute;
+			right:30px;
+		}
+
+	
+		li {
+		  list-style-type:none;
+		  
+		}
+
+		#menu li {
+		  float: right;
+		  padding: 1.5% 2%;
+		  margin-right:9%;
+		  text-align:center;
+		  margin-bottom:10px;
+		  position:relative;
+		  margin-top:-5.3%;
+		}
+
+		#menu li:hover {
+		  background-color: grey;
+		}
+
+		#menu a {
+			font-size: 1.3em;
+			text-decoration:none;
+			color:inherit;
+		}
+
+		#menu .subitems {
+		  background-color: darkgrey;
+		  padding: 0px;
+		  display: none;
+		  line-height:1.8vw;
+		  position:absolute;
+		  width:190%;
+		  left:0;top:100%;
+		  z-index:100;
+		  -webkit-transition: height 0.3s ease-in;
+		  font-family:sans-serif;
+		}
+
+		#menu .subitems li {
+		  width: 100%;
+		  margin: 0px;
+		  padding: 0px;
+		  padding-bottom:3px;
+		  padding-top:2px;
+		  float: none;
+		  font-size:0.7rem;
+		 
+		}
+
+		#menu .subitems li:hover{
+			font-weight:bold;
+		}
+
+		ul.subitems li:nth-child(odd){
+			color:black;
+		}
+
+		#menu #tvshow:hover .subitems {
+		  display: block;
+		}
+
+		#menu #movies:hover .subitems {
+		  display: block;
+		}
+	
+	</style>
+	
+</head>
+
+<body>
+	<header>
+	
+	<a href="intro.html"><img src="marvelstudioslogo2.png" alt="Marvel Logo" class="logo" /></a>
+	
+	<div id="menu">
+	
+		<ul>
+		
+			<li id ="tvshow">
+			<a href="">TV Shows</a>
+				<ul class="subitems">
+					
+					<li><a href="tv/aos/aos.html">Marvel's Agents of Shield </a></li>
+					<!--<li><a href="tv/carter/carter.html">Marvel's Agent Carter</a></li>-->
+					<li><a href="tv/daredevil/daredevil.html">Marvel's Daredevil</a></li>
+					<li><a href="tv/jj/jj.html">Marvel's Jessica Jones</a></li>
+					<li><a href="tv/lukecage/lukecage.html">Marvel's Luke Cage</a></li>
+					<li><a href="tv/ironfist/ironfist.html">Marvel's Iron Fist</a></li>
+					<li><a href="tv/defenders/defenders.html">Marvel's Defenders</a></li>
+					<!--<li><a href="tv/inhumans/inhumans.html">Marvel's Inhumans</a></li>-->
+					<!--<li><a href="tv/punisher/punisher.html">Marvel's Punisher</a></li>-->
+				
+				</ul>
+			</li>
+			
+			<li id="movies">
+			<a href="">Movies</a>
+				<ul class="subitems">
+					<li><a href="movies/ironman/ironman.html">Iron Man</a></li>
+					<li><a href="movies/hulk/hulk.html">The Incredible Hulk</a></li>
+					<li><a href="movies/ironman2/ironman2.html">Iron Man 2</a></li>
+					<!--<li><a href="movies/thor/thor.html">Thor</a></li>-->
+					<li><a href="movies/captain/captain.html">Captain America : The First Avenger</a></li>
+					<li><a href="movies/avengers/avengers.html">Marvel's Avengers</a></li>
+					<li><a href="movies/ironman3/ironman3.html">Iron Man 3</a></li>
+					<!--<li><a href="movies/thor2/thor2.html">Thor : The Dark World</a></li>-->
+					<li><a href="movies/captain2/captain2.html">Captain America : The Winter Soldier</a></li>
+					<!--<li><a href="movies/gotg/gotg.html">Guardians of the Galaxy</a></li>-->
+					<li><a href="movies/avengers2/avengers2.html">Avengers : Age of Ultron</a></li>
+					<!--<li><a href="movies/antman/antman.html">Ant-Man</a></li>-->
+					<li><a href="movies/captain3/captain3.html">Captain America : Civil War</a></li>
+					<li><a href="movies/strange/strange.html">Doctor Strange</a></li>
+					<!--<li><a href="movies/gotg2/gotg2.html">Guardians of the Galaxy Vol. 2</a></li>-->
+					<li><a href="movies/spiderman/spiderman.html">Spider Man : Homecoming</a></li>
+					<!--<li><a href="index.html#th">Thor : Ragnarok</a></li>-->
+				</ul>
+			</li>
+			
+			<li id="home"><a href="intro.html">Home</a></li>
+		
+		</ul>
+	
+	</div>
+	</header>
+	<br/><br/>
+	<main>
+	<h1>Fill Up Your Contact Details</h1>
+	<form action="subsscribenews.php" method="POST"><div id="form">
+		<label>Name: <input type="text" name="name" /></label><br/><br/>
+		<label>Email ID: <input type="email" name="mail" /></label><br/><br/>
+		<label>Phone Number: <input type="text" name="phno" /></label><br/><br/>
+		<label>Address: <br/><textarea type="text" name="address" rows="5" cols="50" ></textarea></label><br/><br/>
+		<label>Select Your Preferred Contact Method:<br/><br/>
+			<label><input type="checkbox" name="method[]" value="E-mail"/>Email</label>
+			<label><input type="checkbox" name="method[]" value="Phone"/>Calls</label>
+			<label><input type="checkbox" value="Message" name="method[]"/>Text Message</label>
+			<label><input type="checkbox" value="Post" name="method[]"/>Post</label>
+		</label></div><br/><br/>
+		<input type="submit" value="Submit"/>
+		
+	</form>
+	</main><br/><br/><br/><br/><br/><br/><hr/>
+	<footer>
+		<a href="contact.html" id="cu"> Contact Us </a>
+		<a href="subscribe.html" id="su"> Subscribe to our Newsletter </a>
+	</footer><br/>
+	
+</body>
+
+</html>

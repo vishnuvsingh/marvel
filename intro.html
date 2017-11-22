@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<title>Marvel Studios</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<style>
+	input{
+		background-color:/*#340a07*/ black;
+		color: #d2cec8;
+		font-family:serif;
+        border-radius: 5px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		font-weight:bold;
+		border:0.7px solid white;
+		padding:.5vw;
+		-webkit-transition-duration: 0.3s;
+		transition-duration:0.3s;
+	}
+	input:hover{
+		background-color:/*#340a07*/ white;
+		color: black;
+		border:0.7px inset white;
+		box-shadow:3px 3px 1px darkgrey;
+	}
+	
+	input:focus{
+		border-radius: 4px;
+	}
+	#tr{
+		position:absolute;
+		left:/*1065px*/70%;
+	}
+	
+	span.de{
+		font-weight:bold;
+	}
+	
+	div.sum{
+		text-align:center;
+		display:none;
+		font-size:1rem;
+		line-height:3vw;
+		font-weight:bold;
+	}
+	
+	span.de:hover+div.sum{
+		display:block;
+	}
+	
+	#quiz{
+		color:white;
+		text-decoration:none;
+	}
+	
+	#quiz:hover{
+		font-weight:bold;
+		color:darkred;
+	}
+	
+	#replay{
+		display:block;
+		margin-top:3vw;
+		font-size:0.99rem;
+		color:white;
+		text-decoration:none;
+		opacity:0.4;
+		margin-bottom:-0.9vw;
+	}
+	
+	#replay:hover{
+		opacity:0.8;
+		font-weight:bold;
+	}
+</style>
+
+<script>
+	var obj={
+		trailertitle:document.getElementById("trailertitle"),
+		trailervideo:document.getElementById("trailervideo"),
+		changeTrailer:function(){
+			trailertitle.innerHTML="Black Panther Trailer";
+			trailervideo.setAttribute("src","bp.mp4");
+			trailervideo.style.maxHeight="65vh";
+		},
+		changeTrailer2:function(){
+			trailertitle.innerHTML="Thor Ragnarok Trailer";
+			trailervideo.setAttribute("src","thormedia/Thor.mp4");
+			trailervideo.style.maxHeight="50vh";
+		}
+	}
+	
+</script>
+
+<link href="indexcss.css" rel="stylesheet" type="text/css"></link>
+
+</head>
+
+
+<body>
+	<header>
+	<div class="logo"><a href="index.html"><img src="marvelstudioslogo.png" alt="Marvel Logo" class="logo" /></a></div>
+	</header>
+	
+	<br/>
+	
+	<div id="movietv">
+	
+		<nav class="movies">
+		<br/>
+			<ul class="movies">
+				<li><a href="movies/ironman/ironman.html">Iron Man</a></li>
+				<li><a href="movies/hulk/hulk.html">The Incredible Hulk</a></li>
+				<li><a href="movies/ironman2/ironman2.html">Iron Man 2</a></li>
+				<!--<li><a href="movies/thor/thor.html">Thor</a></li>-->
+				<li><a href="movies/captain/captain.html">Captain America : The First Avenger</a></li>
+				<li><a href="movies/avengers/avengers.html">Marvel's Avengers</a></li>
+				<li><a href="movies/ironman3/ironman3.html">Iron Man 3</a></li>
+				<!--<li><a href="movies/thor2/thor2.html">Thor : The Dark World</a></li>-->
+				<li><a href="movies/captain2/captain2.html">Captain America : The Winter Soldier</a></li>
+				<!--<li><a href="movies/gotg/gotg.html">Guardians of the Galaxy</a></li>-->
+				<li><a href="movies/avengers2/avengers2.html">Avengers : Age of Ultron</a></li>
+				<!--<li><a href="movies/antman/antman.html">Ant-Man</a></li>-->
+				<li><a href="movies/captain3/captain3.html">Captain America : Civil War</a></li>
+				<li><a href="movies/strange/strange.html">Doctor Strange</a></li>
+				<!--<li><a href="movies/gotg2/gotg2.html">Guardians of the Galaxy Vol. 2</a></li>-->
+				<li><a href="movies/spiderman/spiderman.html">Spider Man : Homecoming</a></li>
+				<!--<li><a href="#th">Thor : Ragnarok</a></li>-->
+			</ul>
+			<br/>
+		</nav>
+		
+		<main class="body">
+		
+			<a href="index.html" id="replay">Replay the Intro</a>
+		
+			<section>
+			
+				<h2>Marvel Quiz</h2>
+				
+				<a id="quiz" href="quiz/quizstart.html" >Take the Quiz</a><br/><br/>
+			
+			</section>
+			
+			<section id="trailer">
+				<h1 id="trailertitle">Thor Ragnarok Trailer</h1>
+				<input type="button" id="bp" value="Black Panther Trailer" onclick="obj.changeTrailer()" style="outline:0;" />
+				<input type="button" id="tr" value="Thor Ragnarok Trailer" onclick="obj.changeTrailer2()" style="outline:0;" />
+				<br/><br/>
+				<video src="thormedia/Thor.mp4" controls style="max-height:50vh;" preload id="trailervideo">
+					Your browser does not support video.
+				</video>
+			</section>
+			<br/>
+			
+			<section id="um">
+				<h2>Upcoming movies </h2>
+				<ol id="upmo">
+					
+					
+					<br/><li><span class="de" id="th">Thor : Ragnarok</span><div class="sum">Imprisoned on the other side of the universe,<br/>
+					the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, <br/>
+					his former ally and fellow Avenger.
+					<br/>Thor's quest for survival leads him in a race against time to prevent<br/> the all-powerful Hela from 
+					destroying his home world and the Asgardian civilization.</div></li><br/>
+					
+					<li><span class="de">
+					Black Panther</span><div class="sum">
+						Black Panther (Chadwick Boseman) springs into action<br/> when an old enemy threatens the 
+						fate of his nation and the world.</div>
+					</li><br/>
+					
+					<li><span class="de">Avengers: Infinity War</span><div class="sum">Iron Man (Robert Downey Jr.), 
+					Thor (Chris Hemsworth), the Hulk (Mark Ruffalo) and the rest<br/> of the Avengers face their most powerful enemy yet, 
+					the evil Thanos (Josh Brolin).</div></li><br/>
+					
+					<li><span class="de">Ant-Man and The Wasp</span><div class="sum">Ant-Man joins forces with the Wasp<br/> on an 
+					urgent new mission to uncover secrets from the past.</div></li><br/>
+					
+				
+				</ol>
+			</section>
+		
+			
+			<section>
+				<h2>Next Avengers Movie</h2><br/>
+				<p>The Big Marvel movie is releasing on May 3,2018.</p>
+				<br/>
+				<img id="aif" src="avengers3 poster.jpeg" title="Avengers : Infinity War" alt="poster"/><br/><br/>
+				<p> This is a Huge movie for all marvel fans as it will have the biggest cast Marvel movies has ever seen.<br/> This movie will also be the first time the Guardians of the Galaxy and the Avengers share screen time.<br/></p>
+			</p>
+			</section><br/><br/>
+		</main>
+		
+		<nav class="tv">
+		<br/>
+			<ul class="tv">
+				<li><a href="tv/aos/aos.html">Marvel's Agents of Shield </a></li>
+				<!--<li><a href="tv/carter/carter.html">Marvel's Agent Carter</a></li>-->
+				<li><a href="tv/daredevil/daredevil.html">Marvel's Daredevil</a></li>
+				<li><a href="tv/jj/jj.html">Marvel's Jessica Jones</a></li>
+				<li><a href="tv/lukecage/lukecage.html">Marvel's Luke Cage</a></li>
+				<li><a href="tv/ironfist/ironfist.html">Marvel's Iron Fist</a></li>
+				<li><a href="tv/defenders/defenders.html">Marvel's Defenders</a></li>
+				<!--<li><a href="tv/inhumans/inhumans.html">Marvel's Inhumans</a></li>-->
+				<!--<li><a href="tv/punisher/punisher.html">Marvel's Punisher</a></li>-->
+			</ul>
+		<br/>
+		</nav>
+	
+	</div>
+	<br/>
+	<br/>
+	<hr/>
+	<footer>
+	<ul id="footerul">
+		<li id="footp1"><a href="contact.html"> Contact Us </a></li>
+		<li id="footp2"><a href="subscribe.html"> Subscribe to our Newsletter </a></li>
+	</ul>
+	</footer>
+	<br/>
+	<br/>
+
+	
+	
+	
+</body>
+
+</html>
